@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GrassLib.iml" filepath="$PROJECT_DIR$/GrassLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/imagesel/imagesel.iml" filepath="$PROJECT_DIR$/imagesel/imagesel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imagesel/imagepicker.iml" filepath="$PROJECT_DIR$/imagesel/imagepicker.iml" />
     </modules>
   </component>
 </project>
