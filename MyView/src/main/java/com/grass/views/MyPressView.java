@@ -111,7 +111,6 @@ public class MyPressView extends android.support.v7.widget.AppCompatTextView {
 
     }
 
-
     //改变样式
     private void setColor(int state) {
         if (state == MotionEvent.ACTION_DOWN) {

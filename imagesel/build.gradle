@@ -23,6 +23,27 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:26.1.0'
     compile 'com.github.chrisbanes.photoview:library:1.2.4'
 }
-//version = "1.0.4"
+//version = "1.0.5"
 //apply from: '../upload.gradle'
+//group = "com.grass"
+
+//Properties properties = new Properties()
+//boolean isHasFile = false
+//if (project.rootProject.file('local.properties') != null){
+//    isHasFile = true
+//    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+//}
+//bintray {
+//    user = isHasFile ? properties.getProperty("bintray.user") : System.getenv("bintray.user")
+//    key = isHasFile ? properties.getProperty("bintray.apikey") : System.getenv("bintray.apikey")
+//    configurations = ['archives']
+//    pkg {
+//        repo = "GrassLib"
+//        name = "grass"                                                 // #CONFIG# project name in jcenter
+//        websiteUrl = "https://github.com/xinkong/GrassLib"
+//        vcsUrl = "https://github.com/xinkong/GrassLib.git"
+//        licenses = ["Apache-2.0"]
+//        publish = true
+//    }
+//}
 

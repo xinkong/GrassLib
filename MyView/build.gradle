@@ -23,12 +23,31 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
     implementation 'com.android.support:appcompat-v7:26.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
 
-version = "1.0.0"
+version = "1.0.1"
 apply from: '../upload.gradle'
+group = "com.grass.views"
+Properties properties = new Properties()
+boolean isHasFile = false
+if (project.rootProject.file('local.properties') != null){
+    isHasFile = true
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+}
+bintray {
+    user = isHasFile ? properties.getProperty("bintray.user") : System.getenv("bintray.user")
+    key = isHasFile ? properties.getProperty("bintray.apikey") : System.getenv("bintray.apikey")
+    configurations = ['archives']
+    pkg {
+        repo = "GrassLib"
+        name = "GrassView"                                                 // #CONFIG# project name in jcenter
+        websiteUrl = "https://github.com/xinkong/GrassLib"
+        vcsUrl = "https://github.com/xinkong/GrassLib.git"
+        licenses = ["Apache-2.0"]
+        publish = true
+    }
+}

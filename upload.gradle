@@ -4,7 +4,7 @@ apply plugin: 'com.jfrog.bintray'
 
 def siteUrl = 'https://github.com/xinkong/GrassLib'
 def gitUrl = 'https://github.com/xinkong/GrassLib.git'
-group = "com.grass"
+
 
 //gradlew bintrayUpload
 install {
@@ -57,24 +57,4 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
 artifacts {
     // archives javadocJar
     archives sourcesJar
-}
-
-Properties properties = new Properties()
-boolean isHasFile = false
-if (project.rootProject.file('local.properties') != null){
-    isHasFile = true
-    properties.load(project.rootProject.file('local.properties').newDataInputStream())
-}
-bintray {
-    user = isHasFile ? properties.getProperty("bintray.user") : System.getenv("bintray.user")
-    key = isHasFile ? properties.getProperty("bintray.apikey") : System.getenv("bintray.apikey")
-    configurations = ['archives']
-    pkg {
-        repo = "GrassLib"
-        name = "grass"                                                 // #CONFIG# project name in jcenter
-        websiteUrl = siteUrl
-        vcsUrl = gitUrl
-        licenses = ["Apache-2.0"]
-        publish = true
-    }
 }
