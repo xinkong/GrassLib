@@ -904,7 +904,14 @@ public class BottomBar extends LinearLayout implements View.OnClickListener, Vie
 
         if(onTabItemClickListener != null){
             for (int i = 0; i <tabContainer.getChildCount(); i++) {
-                if( ((BottomBarTab)target) == tabContainer.getChildAt(i)){
+                View childAt = tabContainer.getChildAt(i);
+                if(childAt instanceof BadgeContainer){
+                    childAt = findTabInLayout((BadgeContainer) childAt);
+                }
+
+                BottomBarTab tab = (BottomBarTab) childAt;
+
+                if( ((BottomBarTab)target) == tab){
                     onTabItemClickListener.tabItemClickListener(i);
                 }
             }
