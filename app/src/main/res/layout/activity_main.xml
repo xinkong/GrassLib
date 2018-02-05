@@ -8,7 +8,8 @@
     android:orientation="vertical"
     tools:context="com.grass.grasslib.MainActivity">
 
-   <com.grass.views.MyEditText
+   <com.grass.views.MyRemindEditText
+       android:id="@+id/myremind"
        android:layout_width="match_parent"
        android:layout_margin="10dp"
        android:padding="10dp"
