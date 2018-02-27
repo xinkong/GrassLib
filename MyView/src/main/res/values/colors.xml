@@ -3,4 +3,13 @@
     <color name="bb_inActiveBottomBarItemColor">#747474</color>
     <color name="bb_darkBackgroundColor">#212121</color>
     <color name="bb_tabletRightBorderDark">#505050</color>
+
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="tools_bar_view">#b0535353</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
 </resources>
