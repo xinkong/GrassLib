@@ -16,4 +16,11 @@
        android:layout_height="wrap_content"
        />
 
+   <TextView
+       android:id="@+id/qrCodeResult"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="20dp"
+       android:text="二维码扫描"/>
+
 </LinearLayout>
