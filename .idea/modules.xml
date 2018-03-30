@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/GrassLib.iml" filepath="$PROJECT_DIR$/GrassLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyView/MyView.iml" filepath="$PROJECT_DIR$/MyView/MyView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://E:\asWork\demo\GrassLib\imagesel\imagepicker.iml" filepath="E:\asWork\demo\GrassLib\imagesel\imagepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imagesel/imagepicker.iml" filepath="$PROJECT_DIR$/imagesel/imagepicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/imagesel/imagesel.iml" filepath="$PROJECT_DIR$/imagesel/imagesel.iml" />
       <module fileurl="file://$PROJECT_DIR$/refresh/refresh.iml" filepath="$PROJECT_DIR$/refresh/refresh.iml" />
     </modules>
